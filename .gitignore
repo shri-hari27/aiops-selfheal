@@ -1,3 +1,21 @@
-app/venv/
+# Python
+venv/
 __pycache__/
 *.pyc
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Keep the provider lock file
+#! .terraform.lock.hcl
+
+# Logs
+webapp_logs/
+webapp_logs.zip
+*.log
+
+# VS Code
+.vscode/
