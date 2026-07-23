@@ -1,0 +1,8 @@
+venv/
+.git/
+.pytest_cache/
+terraform/
+webapp_logs/
+webapp_logs.zip
+__pycache__/
+*.pyc

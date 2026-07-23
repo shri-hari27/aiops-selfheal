@@ -5,6 +5,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE_NAME: aiops-selfheal
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,4 +38,4 @@ jobs:
         run: pytest
 
       - name: Build Docker Image
-        run: docker build -t aiops-selfheal:latest .
+        run: docker build -t $IMAGE_NAME:latest .
