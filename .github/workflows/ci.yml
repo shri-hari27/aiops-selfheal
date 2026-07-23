@@ -19,5 +19,5 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Print Welcome Message
-        run: echo "Welcome to GitHub Actions!"
+      - name: Verify Flask Application
+        run: python -m py_compile app/app.py
