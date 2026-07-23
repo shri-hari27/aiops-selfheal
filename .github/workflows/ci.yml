@@ -8,5 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Print Welcome Message
         run: echo "Welcome to GitHub Actions!"
