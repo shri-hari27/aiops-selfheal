@@ -16,5 +16,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
       - name: Print Welcome Message
-        run: echo "Welcome to GitHub Actions!" 
+        run: echo "Welcome to GitHub Actions!"
