@@ -9,3 +9,4 @@ data:
   APP_NAME: "AIOps Self-Healing Demo"
   ENVIRONMENT: "Production"
   LOG_LEVEL: "INFO"
+  VERSION: "v2.0"
