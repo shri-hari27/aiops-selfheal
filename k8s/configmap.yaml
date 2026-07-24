@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: aiops-config
+  namespace: aiops
+
+data:
+  APP_NAME: "AIOps Self-Healing Demo"
+  ENVIRONMENT: "Production"
+  LOG_LEVEL: "INFO"
