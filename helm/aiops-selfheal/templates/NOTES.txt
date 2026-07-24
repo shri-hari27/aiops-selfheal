@@ -1,0 +1,31 @@
+Thank you for installing AIOps Self-Healing Demo.
+
+Useful commands:
+
+Check Release
+
+helm list
+
+Check Pods
+
+kubectl get pods -n {{ .Values.namespace.name }}
+
+Check Service
+
+kubectl get svc -n {{ .Values.namespace.name }}
+
+Upgrade
+
+helm upgrade aiops .
+
+Rollback
+
+helm rollback aiops 1
+
+History
+
+helm history aiops
+
+Uninstall
+
+helm uninstall aiops

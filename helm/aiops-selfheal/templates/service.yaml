@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "aiops-selfheal.fullname" . }}
+  namespace: {{ .Values.namespace.name }}
+  labels:
+{{ include "aiops-selfheal.labels" . | indent 4 }}
+
+spec:
+  type: {{ .Values.service.type }}
+
+  selector:
+    app: {{ include "aiops-selfheal.fullname" . }}
+
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+      nodePort: {{ .Values.service.nodePort }}
